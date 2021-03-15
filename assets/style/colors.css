@@ -1,0 +1,57 @@
+/* common colors */
+.green_color{
+    color:#4caf50;
+  }
+  .red_color{
+    color:#fc324b;
+  }
+  .yellow_color{
+    color:#f3d55b;
+  }
+  .blue_color{
+    color:#0593fc;
+  }
+  /* bg with borders */
+  .light_red_bg_br_color{
+    background-color: #fff7f2;
+    border-left: 3px solid #fc324b;
+  }
+  .light_green_bg_br_color{
+    background-color: #f3fff4;
+    border-left: 3px solid #388e3c;
+  }
+  .light_yellow_bg_br_color{
+    background-color: #fcfaf1;
+    border-left: 3px solid #f3d55b;
+  }
+  .light_blue_bg_br_color{
+    background-color: #eef8ff;
+    border-left: 3px solid #0593fc;
+  }
+  /* light bg colors */
+  .light_red_bg_color{
+    background-color: #fff7f2;
+  }
+  .light_green_bg_color{
+    background-color: #f3fff4;
+  }
+  .light_yellow_bg_color{
+    background-color: #fcfaf1;
+  }
+  .light_blue_bg_color{
+    background-color: #eef8ff;
+  }
+  /* background_colors */
+  .green_bg_color{
+    background-color:#4caf50;
+  }
+  .red_bg_color{
+    background-color:#fc324b;
+  }
+  .yellow_bg_color{
+    background-color:#f3d55b;
+  }
+  .blue_bg_color{
+    background-color:#0593fc;
+  }
+  

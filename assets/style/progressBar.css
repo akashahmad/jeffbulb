@@ -1,0 +1,101 @@
+
+/* second section progress bar css of desktop */
+/* progress bar css */
+.section2
+  .section2_components_container
+  .box2_container
+  .right_side_box2
+  .progress-bar-vertical {
+  width: 7px;
+  min-height: 100% !important;
+  display: flex;
+  align-items: flex-end;
+}
+
+.section2
+  .section2_components_container
+  .box2_container
+  .right_side_box2
+  .progress-bar-vertical
+  .progress-bar {
+  width: 100%;
+  height: 70% !important;
+  height: 0;
+  -webkit-transition: height 0.6s ease;
+  -o-transition: height 0.6s ease;
+  transition: height 0.6s ease;
+  background-color: #4caf50 !important;
+}
+/* third box */
+.section2
+  .section2_components_container
+  .box3_container
+  .third_box_image_container {
+  background-color: #edffd4;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+}
+.section2 .section2_components_container .box3_container .right_side_box3 h5 {
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+}
+.section2 .section2_components_container .box3_container .right_side_box3 h5 {
+  color: #4caf50;
+  font-size: 25px;
+}
+
+.section2
+  .section2_components_container
+  .box3_container
+  .right_side_box3
+  .custom_button {
+  /* background-color: #4caf50; */
+  border-bottom-right-radius: 20px;
+}
+.section2
+  .section2_components_container
+  .box2_container
+  .right_side_box2
+  .custom_button {
+  /* background-color: #4caf50; */
+  border-bottom-right-radius: 20px;
+}
+
+.section2 .section2_components_container .box3_container .right_side_box3 h3 {
+  font-size: 50px;
+  color: #261d56;
+}
+
+.section2
+  .section2_components_container
+  .box3_container
+  .right_side_box3
+  .percentage {
+  color: #f24a8d;
+}
+/* progress bar css */
+.section2
+  .section2_components_container
+  .box3_container
+  .right_side_box3
+  .progress-bar-vertical {
+  width: 7px;
+  min-height: 100% !important;
+  display: flex;
+  align-items: flex-end;
+}
+
+.section2
+  .section2_components_container
+  .box3_container
+  .right_side_box3
+  .progress-bar-vertical
+  .progress-bar {
+  width: 100%;
+  height: 12% !important;
+  height: 0;
+  -webkit-transition: height 0.6s ease;
+  -o-transition: height 0.6s ease;
+  transition: height 0.6s ease;
+  background-color: #f24a8d !important;
+}
