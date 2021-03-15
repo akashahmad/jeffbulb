@@ -13,7 +13,7 @@ body {
 }
 @media screen and (max-width: 1024px) {
   .page_container {
-    background-image: none;
+    background-image: url("../images/download");
   }
 }
 .page_container .sectionOne .header_paragraph_container p {
@@ -25,8 +25,9 @@ body {
   .page_container .sectionOne .header_paragraph_container p {
     font-size: 8px;
     position: absolute;
-    left: 40;
-    padding: 40px 0px 0px 0px;
+    /* left: 40!important; */
+    width: 90%;
+    padding: 30px 0px 0px 0px;
   }
 }
 
