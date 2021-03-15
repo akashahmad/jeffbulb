@@ -11,7 +11,7 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
   .page_container {
     background-image: url("../images/download");
   }
