@@ -8,18 +8,37 @@ body {
 /* section 1 css starts from here */
 .page_container {
   background-image: url("../images/background.png");
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
+}
+@media screen and (max-width: 1024px) {
+  .page_container {
+    background-image: none;
+  }
 }
 .page_container .sectionOne .header_paragraph_container p {
   font-size: 14px;
   color: rgba(90, 51, 228, 0.72);
   z-index: 1;
 }
+@media screen and (max-width: 1023px) {
+  .page_container .sectionOne .header_paragraph_container p {
+    font-size: 8px;
+    position: absolute;
+    left: 40;
+    padding: 40px 0px 0px 0px;
+  }
+}
 
 .page_container .sectionOne .header_right_side {
   padding-right: 40px !important;
 }
+@media screen and (max-width: 1024px) {
+  .page_container .sectionOne .header_right_side {
+    padding-right: 15px !important;
+  }
+}
+
 .page_container .sectionOne .profile_headings h5 {
   font-size: 18px;
   color: #5a33e4;
@@ -94,6 +113,11 @@ body {
   font-weight: 600;
   color: #261d56;
 }
+/* @media (max-width: 1024px) and (min-width: 320px) {
+.section2 .section2_components_container .responsive_section2_box{
+  display: none!important;
+}
+} */
 /* center box */
 .section2
   .section2_components_container
@@ -103,9 +127,9 @@ body {
   border-bottom-left-radius: 20px;
   border-top-left-radius: 20px;
 }
-.section2 .section2_components_container .box2_container .right_side_box2 h5 {
-  border-bottom-left-radius: 20px;
-  border-top-left-radius: 20px;
+.section2 .section2_components_container .box2_container .right_side_box2 {
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
 }
 .section2 .section2_components_container .box2_container .right_side_box2 h5 {
   color: #f24a8d;

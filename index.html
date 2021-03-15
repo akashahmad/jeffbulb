@@ -27,7 +27,7 @@
     <!-- jquery cloudflare  -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script> -->
-    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <!-- owl carousal -->
     <link
@@ -52,10 +52,14 @@
       >
         <!-- left side -->
         <div
-          class="col-6 col-md-8 col-lg-8 col-xl-8 d-flex align-items-center px-0"
+          class="col-8 col-md-8 col-lg-8 col-xl-8 d-flex align-items-center px-0"
         >
           <!-- hamburger -->
-          <div>
+          <div
+            type="button"
+            data-toggle="modal"
+            data-target="#profileModal"
+          >
             <img src="./assets/images/hamburger.png" height="150px" />
           </div>
           <!-- paragraph -->
@@ -68,14 +72,16 @@
         </div>
         <!-- right side -->
         <div
-          class="col-6 header_right_side col-md-4 col-lg-4 col-xl-4 d-flex align-items-center justify-content-end px-0"
+          class="col-4 header_right_side col-md-4 col-lg-4 col-xl-4 d-flex align-items-center justify-content-end px-0 pl-0"
         >
           <div>
-            <img src="./assets/images/profile.png" height="65px" />
+            <img src="./assets/images/profile.png" class="h_50" />
           </div>
-          <div class="profile_headings pl-2">
-            <h5 class="font-weight-bold">Mike Manson</h5>
-            <h6>iammike@gmail.com</h6>
+          <div class="d-none d-lg-block d-xl-block">
+            <div class="profile_headings pl-2">
+              <h5 class="font-weight-bold">Mike Manson</h5>
+              <h6>iammike@gmail.com</h6>
+            </div>
           </div>
         </div>
       </div>
@@ -92,13 +98,13 @@
         >
           <!-- first box -->
           <div
-            class="box1_container shadow-sm col-12 col-md-12  col-lg-4 col-xl-4 section1_firstBox_container px-0"
+            class="box1_container shadow-sm col-12 col-md-12 col-lg-4 col-xl-4 section1_firstBox_container px-0"
           >
             <!-- handshake image -->
             <div
-              class="col-12 col-md-12 col-lg-6 col-xl-6 d-flex justify-content-center px-0 py-4"
+              class="col-12 col-md-12 col-lg-6 col-xl-6 d-flex align-items-center justify-content-center px-0 py-4"
             >
-              <img src="./assets/images/handshake@3x.png" class="h_100" />
+              <img src="./assets/images/handshake@3x.png" class="h_90" />
             </div>
             <!-- right side card -->
             <div class="col-12 col-lg-6 col-xl-6 px-0">
@@ -128,7 +134,7 @@
           </div>
           <!-- second box -->
           <div
-            class="d-none d-lg-block d-xl-block col-12 col-lg-3 col-xl-3 px-0"
+            class="d-none d-lg-block d-xl-block col-12 col-lg-3 col-xl-3 px-0 responsive_section2_box"
           >
             <div class="box2_container col-12 d-flex px-0">
               <!-- left-side -->
@@ -173,7 +179,7 @@
           </div>
           <!-- third box -->
           <div
-            class="d-none d-lg-block d-xl-block col-12 col-lg-3 col-xl-3 px-0"
+            class="d-none d-lg-block d-xl-block col-12 col-lg-3 col-xl-3 px-0 responsive_section2_box"
           >
             <div class="box3_container col-12 d-flex px-0">
               <!-- left-side -->
@@ -249,6 +255,7 @@
               </div>
             </div>
           </div>
+          <!-- 2nd  -->
           <div class="item br_radius_20 light_green_bg_color shadow-sm">
             <!-- image -->
             <div
@@ -263,14 +270,14 @@
                 <div class="col-12 px-0 green_box">
                   <h4 class="green_color font-weight-bold">Meels</h4>
                   <h3 class="text-right">102</h3>
-                  <h6 class="text-left green_color">78%</h6>
+                  <h6 class="text-left red_color">28</h6>
                   <div class="progress">
-                    <div class="progress-bar green_bg_color w_78"></div>
+                    <div class="progress-bar red_bg_color w_28"></div>
                   </div>
                 </div>
                 <!-- right side -->
                 <div class="d-flex justify-content-end">
-                  <img src="./assets/images/Group90@3x.png" class="h_150" />
+                  <img src="./assets/images/greenButton.png" class="h_150" />
                 </div>
               </div>
             </div>
@@ -412,172 +419,398 @@
       <!-- section 4 starts from here -->
       <div class="section4 pt-2 pb-5">
         <!-- desktop screen events  -->
-        <div class="col-12 px-0 d-flex justify-content-between">
-          <!-- left side -->
-          <div class="col-lg-8 col-xl-8 px-0">
-            <div class="title_discription_container py-2">
-              <h2 class="font-weight-bold">upcoming events.</h2>
-              <h6>Events coming soon...</h6>
+        <div class="d-none col-12 px-0 d-lg-block d-xl-block">
+          <div class="col-12 px-0 d-flex justify-content-between">
+            <!-- left side -->
+            <div class="col-lg-8 col-xl-8 px-0">
+              <div class="title_discription_container py-2">
+                <h2 class="font-weight-bold">upcoming events.</h2>
+                <h6>Events coming soon...</h6>
+              </div>
+              <!-- upcoming events -->
+              <div class="col-12 d-flex justify-content-between px-0 py-2">
+                <!-- 1st box -->
+                <div
+                  class="box light_green_bg_color w_24 px-0 mr-2 br_radius_20"
+                >
+                  <!-- image -->
+                  <div
+                    class="d-flex justify-content-center px-2 py-4 align-items-center"
+                  >
+                    <img src="./assets/images/plant@3x.png" class="h_100" />
+                  </div>
+                  <!-- box -->
+                  <div class="event_box px-2 py-3 m-0">
+                    <h4 class="green_color">Event Name</h4>
+                    <p>Know the symptomp of covid19</p>
+                    <h6 class="green_color font-weight-bold">
+                      Learn More
+                      <span
+                        ><img src="./assets/images/Path@3x(1).png" class="h_15"
+                      /></span>
+                    </h6>
+                  </div>
+                </div>
+                <!-- 2nd box -->
+                <div class="box light_red_bg_color w_24 px-0 mr-2 br_radius_20">
+                  <!-- image -->
+                  <div
+                    class="d-flex justify-content-center px-2 py-4 align-items-center"
+                  >
+                    <img src="./assets/images/apple@3x.png" class="h_100" />
+                  </div>
+                  <!-- box -->
+                  <div class="event_box px-2 py-3 m-0">
+                    <h4 class="red_color">Event Name</h4>
+                    <p>Know the symptomp of covid19</p>
+                    <h6 class="red_color font-weight-bold">
+                      Learn More
+                      <span
+                        ><img src="./assets/images/Path@3x.png" class="h_15"
+                      /></span>
+                    </h6>
+                  </div>
+                </div>
+                <!-- 3rd box -->
+                <div
+                  class="box light_yellow_bg_color w_24 px-0 mr-2 br_radius_20"
+                >
+                  <!-- image -->
+                  <div
+                    class="d-flex justify-content-center px-2 py-4 align-items-center"
+                  >
+                    <img src="./assets/images/Page-1@3x.png" class="h_100" />
+                  </div>
+                  <!-- box -->
+                  <div class="event_box px-2 py-3 m-0">
+                    <h4 class="yellow_color">Event Name</h4>
+                    <p>Know the symptomp of covid19</p>
+                    <h6 class="yellow_color font-weight-bold">
+                      Learn More
+                      <span
+                        ><img src="./assets/images/Path@3x(3).png" class="h_15"
+                      /></span>
+                    </h6>
+                  </div>
+                </div>
+                <!-- 4th box -->
+                <div class="box light_red_bg_color w_24 px-0 mr-2 br_radius_20">
+                  <!-- image -->
+                  <div
+                    class="d-flex justify-content-center px-2 py-4 align-items-center"
+                  >
+                    <img
+                      src="./assets/images/phone-call@3x.png"
+                      class="h_100"
+                    />
+                  </div>
+                  <!-- box -->
+                  <div class="event_box px-2 py-3 m-0">
+                    <h4 class="red_color">Event Name</h4>
+                    <p>Know the symptomp of covid19</p>
+                    <h6 class="red_color font-weight-bold">
+                      Learn More
+                      <span
+                        ><img src="./assets/images/Path@3x.png" class="h_15"
+                      /></span>
+                    </h6>
+                  </div>
+                </div>
+              </div>
             </div>
-            <!-- upcoming events -->
-            <div class="col-12 d-flex justify-content-between px-0 py-2">
-              <!-- 1st box -->
-              <div class="box light_green_bg_color w_24 px-0 mr-2 br_radius_20">
-                <!-- image -->
-                <div
-                  class="d-flex justify-content-center px-2 py-4 align-items-center"
-                >
-                  <img src="./assets/images/plant@3x.png" class="h_100" />
-                </div>
-                <!-- box -->
-                <div class="event_box px-2 py-3 m-0">
-                  <h4 class="green_color">Event Name</h4>
-                  <p>Know the symptomp of covid19</p>
-                  <h6 class="green_color font-weight-bold">
-                    Learn More
-                    <span
-                      ><img src="./assets/images/Path@3x(1).png" class="h_15"
-                    /></span>
-                  </h6>
+            <!-- right side -->
+            <div
+              class="right_side_profile_detail col-lg-4 col-xl-4 py-4 px-3 mx-md-2 mx-lg-2 md-xl-4"
+            >
+              <!-- title -->
+              <div>
+                <h5 class="font-weight-bold">Texts Sent/Receive</h5>
+              </div>
+              <!-- search -->
+              <div class="search_icon_container py-2">
+                <div class="box_shadow form-group has-search">
+                  <span class="fas fa-search form-control-feedback"></span>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Search"
+                  />
                 </div>
               </div>
-              <!-- 2nd box -->
-              <div class="box light_red_bg_color w_24 px-0 mr-2 br_radius_20">
-                <!-- image -->
-                <div
-                  class="d-flex justify-content-center px-2 py-4 align-items-center"
-                >
-                  <img src="./assets/images/apple@3x.png" class="h_100" />
+              <!--1st profile discription -->
+              <div class="box_shadow d-flex justify-content-between py-3 px-2">
+                <!-- left side icon -->
+                <div class="col-2 d-flex justify-content-center">
+                  <img
+                    src="./assets/images/MaskGroup1@3x(2).png"
+                    class="h_50"
+                  />
                 </div>
-                <!-- box -->
-                <div class="event_box px-2 py-3 m-0">
-                  <h4 class="red_color">Event Name</h4>
-                  <p>Know the symptomp of covid19</p>
-                  <h6 class="red_color font-weight-bold">
-                    Learn More
-                    <span
-                      ><img src="./assets/images/Path@3x.png" class="h_15"
-                    /></span>
-                  </h6>
+                <div class="col-10 py-1">
+                  <!-- name and time -->
+                  <div class="profile_name_container">
+                    <div class="d-flex justify-content-between">
+                      <h5 class="font-weight-bold">Sam Miller</h5>
+                      <h5 class="font-weight-bold">Today 8:45 PM</h5>
+                    </div>
+                    <div>
+                      <h5>Portfolio</h5>
+                      <p>
+                        Stop wasting time looking for files buried in folder's.
+                        visualize organize all your assets in.
+                      </p>
+                    </div>
+                    <div class="d-flex attachment_icon_text">
+                      <img
+                        src="./assets/images/noun_Attachment_1084336@3x.png"
+                        class="h_20"
+                      />
+                      <p class="px-2">4 Attachments</p>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <!-- 3rd box -->
+              <!--2nd profile discription -->
               <div
-                class="box light_yellow_bg_color w_24 px-0 mr-2 br_radius_20"
+                class="box_shadow d-flex justify-content-between py-3 px-2 my-4"
               >
-                <!-- image -->
-                <div
-                  class="d-flex justify-content-center px-2 py-4 align-items-center"
-                >
-                  <img src="./assets/images/Page-1@3x.png" class="h_100" />
+                <!-- left side icon -->
+                <div class="col-2 d-flex justify-content-center">
+                  <img src="./assets/images/MasGroup1@3x(1).png" class="h_50" />
                 </div>
-                <!-- box -->
-                <div class="event_box px-2 py-3 m-0">
-                  <h4 class="yellow_color">Event Name</h4>
-                  <p>Know the symptomp of covid19</p>
-                  <h6 class="yellow_color font-weight-bold">
-                    Learn More
-                    <span
-                      ><img src="./assets/images/Path@3x(3).png" class="h_15"
-                    /></span>
-                  </h6>
-                </div>
-              </div>
-              <!-- 4th box -->
-              <div class="box light_red_bg_color w_24 px-0 mr-2 br_radius_20">
-                <!-- image -->
-                <div
-                  class="d-flex justify-content-center px-2 py-4 align-items-center"
-                >
-                  <img src="./assets/images/phone-call@3x.png" class="h_100" />
-                </div>
-                <!-- box -->
-                <div class="event_box px-2 py-3 m-0">
-                  <h4 class="red_color">Event Name</h4>
-                  <p>Know the symptomp of covid19</p>
-                  <h6 class="red_color font-weight-bold">
-                    Learn More
-                    <span
-                      ><img src="./assets/images/Path@3x.png" class="h_15"
-                    /></span>
-                  </h6>
+                <div class="col-10 py-1">
+                  <!-- name and time -->
+                  <div class="profile_name_container">
+                    <div class="d-flex justify-content-between">
+                      <h5 class="font-weight-bold">Lily Jones</h5>
+                      <h5 class="font-weight-bold">Today 11:45 PM</h5>
+                    </div>
+                    <div>
+                      <h5>Portfolio</h5>
+                      <p>
+                        Stop wasting time looking for files buried in folder's.
+                        visualize organize all your assets in.
+                      </p>
+                    </div>
+                    <div class="d-flex attachment_icon_text">
+                      <img
+                        src="./assets/images/noun_Attachment_1084336@3x.png"
+                        class="h_20"
+                      />
+                      <p class="px-2">4 Attachments</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <!-- right side -->
-          <div
-            class="right_side_profile_detail col-lg-4 col-xl-4 py-4 px-3 mx-4"
-          >
-            <!-- title -->
-            <div>
-              <h5 class="font-weight-bold">Texts Sent/Receive</h5>
-            </div>
-            <!-- search -->
-            <div class="search_icon_container py-2">
-              <div class="box_shadow form-group has-search">
-                <span class="fas fa-search form-control-feedback"></span>
-                <input type="text" class="form-control" placeholder="Search" />
+        </div>
+        <!-- responsive carousal -->
+        <div
+          id="owl-demo2"
+          class="owl-carousel col-12 owl-theme py-4 d-block d-lg-none d-xl-none"
+        >
+          <!-- 1st slide box -->
+          <div class="item">
+            <!-- 1st box -->
+            <div class="box light_green_bg_color px-0 mr-2 br_radius_20">
+              <!-- image -->
+              <div
+                class="d-flex justify-content-center px-2 py-4 align-items-center"
+              >
+                <img src="./assets/images/plant@3x.png" class="h_100" />
+              </div>
+              <!-- box -->
+              <div class="event_box px-2 py-3 m-0">
+                <h4 class="green_color">Event Name</h4>
+                <p>Know the symptomp of covid19</p>
+                <h6 class="green_color font-weight-bold">
+                  Learn More
+                  <span
+                    ><img src="./assets/images/Path@3x(1).png" class="h_15"
+                  /></span>
+                </h6>
               </div>
             </div>
-            <!--1st profile discription -->
-            <div class="box_shadow d-flex justify-content-between py-3 px-2">
-              <!-- left side icon -->
-              <div class="col-2 d-flex justify-content-center">
-                <img src="./assets/images/MaskGroup1@3x(2).png" class="h_50" />
+          </div>
+          <!-- 2nd  -->
+          <div class="item">
+            <!-- 2nd box -->
+            <div class="box light_red_bg_color px-0 mr-2 br_radius_20">
+              <!-- image -->
+              <div
+                class="d-flex justify-content-center px-2 py-4 align-items-center"
+              >
+                <img src="./assets/images/apple@3x.png" class="h_100" />
               </div>
-              <div class="col-10 py-1">
-                <!-- name and time -->
-                <div class="profile_name_container">
-                  <div class="d-flex justify-content-between">
-                    <h5 class="font-weight-bold">Sam Miller</h5>
-                    <h5 class="font-weight-bold">Today 8:45 PM</h5>
-                  </div>
-                  <div>
-                    <h5>Portfolio</h5>
-                    <p>
-                      Stop wasting time looking for files buried in folder's.
-                      visualize organize all your assets in.
-                    </p>
-                  </div>
-                  <div class="d-flex attachment_icon_text">
-                    <img
-                      src="./assets/images/noun_Attachment_1084336@3x.png"
-                      class="h_20"
+              <!-- box -->
+              <div class="event_box px-2 py-3 m-0">
+                <h4 class="red_color">Event Name</h4>
+                <p>Know the symptomp of covid19</p>
+                <h6 class="red_color font-weight-bold">
+                  Learn More
+                  <span
+                    ><img src="./assets/images/Path@3x.png" class="h_15"
+                  /></span>
+                </h6>
+              </div>
+            </div>
+          </div>
+          <!-- 3rd -->
+          <div class="item">
+            <div class="box light_yellow_bg_color px-0 mr-2 br_radius_20">
+              <!-- image -->
+              <div
+                class="d-flex justify-content-center px-2 py-4 align-items-center"
+              >
+                <img src="./assets/images/Page-1@3x.png" class="h_100" />
+              </div>
+              <!-- box -->
+              <div class="event_box px-2 py-3 m-0">
+                <h4 class="yellow_color">Event Name</h4>
+                <p>Know the symptomp of covid19</p>
+                <h6 class="yellow_color font-weight-bold">
+                  Learn More
+                  <span
+                    ><img src="./assets/images/Path@3x(3).png" class="h_15"
+                  /></span>
+                </h6>
+              </div>
+            </div>
+          </div>
+          <!-- 4th  -->
+          <div class="item">
+            <div class="box light_red_bg_color px-0 mr-2 br_radius_20">
+              <!-- image -->
+              <div
+                class="d-flex justify-content-center px-2 py-4 align-items-center"
+              >
+                <img src="./assets/images/phone-call@3x.png" class="h_100" />
+              </div>
+              <!-- box -->
+              <div class="event_box px-2 py-3 m-0">
+                <h4 class="red_color">Event Name</h4>
+                <p>Know the symptomp of covid19</p>
+                <h6 class="red_color font-weight-bold">
+                  Learn More
+                  <span
+                    ><img src="./assets/images/Path@3x.png" class="h_15"
+                  /></span>
+                </h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- modal -->
+      <div class="col-12 px-3 section4">
+        <div
+          class="modal fade"
+          id="profileModal"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="ModalLongTitle"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog" role="document">
+            <div class="modal-content px-1">
+              <!-- right side -->
+              <div class="right_side_profile_detail my-2 mx-2 px-1">
+                <!-- title -->
+                <div class="px-2 py-3">
+                  <h5 class="font-weight-bold">Texts Sent/Receive</h5>
+                </div>
+                <!-- search -->
+                <div class="search_icon_container py-2">
+                  <div class="box_shadow form-group has-search">
+                    <span class="fas fa-search form-control-feedback"></span>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Search"
                     />
-                    <p class="px-2">4 Attachments</p>
                   </div>
                 </div>
-              </div>
-            </div>
-            <!--2nd profile discription -->
-            <div
-              class="box_shadow d-flex justify-content-between py-3 px-2 my-4"
-            >
-              <!-- left side icon -->
-              <div class="col-2 d-flex justify-content-center">
-                <img src="./assets/images/MasGroup1@3x(1).png" class="h_50" />
-              </div>
-              <div class="col-10 py-1">
-                <!-- name and time -->
-                <div class="profile_name_container">
-                  <div class="d-flex justify-content-between">
-                    <h5 class="font-weight-bold">Lily Jones</h5>
-                    <h5 class="font-weight-bold">Today 11:45 PM</h5>
-                  </div>
-                  <div>
-                    <h5>Portfolio</h5>
-                    <p>
-                      Stop wasting time looking for files buried in folder's.
-                      visualize organize all your assets in.
-                    </p>
-                  </div>
-                  <div class="d-flex attachment_icon_text">
+                <!--1st profile discription -->
+                <div
+                  class="box_shadow d-flex justify-content-between py-3 px-2"
+                >
+                  <!-- left side icon -->
+                  <div class="col-2 d-flex justify-content-center">
                     <img
-                      src="./assets/images/noun_Attachment_1084336@3x.png"
-                      class="h_20"
+                      src="./assets/images/MaskGroup1@3x(2).png"
+                      class="h_50"
                     />
-                    <p class="px-2">4 Attachments</p>
+                  </div>
+                  <div class="col-10 py-1">
+                    <!-- name and time -->
+                    <div class="profile_name_container">
+                      <div class="d-flex justify-content-between">
+                        <h5 class="font-weight-bold">Sam Miller</h5>
+                        <h5 class="font-weight-bold">Today 8:45 PM</h5>
+                      </div>
+                      <div>
+                        <h5>Portfolio</h5>
+                        <p>Stop wasting time looking to.</p>
+                      </div>
+                      <div class="d-flex attachment_icon_text">
+                        <img
+                          src="./assets/images/noun_Attachment_1084336@3x.png"
+                          class="h_20"
+                        />
+                        <p class="px-2">4 Attachments</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--2nd profile discription -->
+                <div
+                  class="box_shadow d-flex justify-content-between py-3 px-2 my-4"
+                >
+                  <!-- left side icon -->
+                  <div class="col-2 d-flex justify-content-center">
+                    <img
+                      src="./assets/images/MasGroup1@3x(1).png"
+                      class="h_50"
+                    />
+                  </div>
+                  <div class="col-10 py-1">
+                    <!-- name and time -->
+                    <div class="profile_name_container">
+                      <div class="d-flex justify-content-between">
+                        <h5 class="font-weight-bold">Lily Jones</h5>
+                        <h5 class="font-weight-bold">Today 11:45 PM</h5>
+                      </div>
+                      <div>
+                        <h5>Invitation</h5>
+                        <p>It always pleasure to.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- 3rd portfolio -->
+                <div
+                  class="box_shadow d-flex justify-content-between py-3 px-2 my-4"
+                >
+                  <!-- left side icon -->
+                  <div class="col-2 d-flex justify-content-center">
+                    <img
+                      src="./assets/images/Mask-Group-1@3x.png"
+                      class="h_50"
+                    />
+                  </div>
+                  <div class="col-10 py-1">
+                    <!-- name and time -->
+                    <div class="profile_name_container">
+                      <div class="d-flex justify-content-between">
+                        <h5 class="font-weight-bold">Smith</h5>
+                        <h5 class="font-weight-bold">Today 11:45 PM</h5>
+                      </div>
+                      <div>
+                        <h5>Assignment Submission</h5>
+                        <p>If You want to setup on.</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -592,7 +825,6 @@
 
         owl.owlCarousel({
           items: 2, //10 items above 1000px browser width
-          // autoPlay:true,
           autoPlay: 3000,
         });
 
@@ -603,9 +835,27 @@
         $(".prev").click(function () {
           owl.trigger("owl.prev");
         });
-        // $(".play").click(function () {
-        //   owl.trigger("owl.play", 500); //owl.play event accept autoPlay speed as second parameter
-        // });
+        $(".stop").click(function () {
+          owl.trigger("owl.stop");
+        });
+      });
+
+      // 2nd carousal
+      $(document).ready(function () {
+        var owl = $("#owl-demo2");
+
+        owl.owlCarousel({
+          items: 4, //10 items above 1000px browser width
+          autoPlay: 3000,
+        });
+
+        // Custom Navigation Events
+        $(".next").click(function () {
+          owl.trigger("owl.next");
+        });
+        $(".prev").click(function () {
+          owl.trigger("owl.prev");
+        });
         $(".stop").click(function () {
           owl.trigger("owl.stop");
         });

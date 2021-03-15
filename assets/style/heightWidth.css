@@ -14,6 +14,9 @@
   .h_50{
     height: 50px;
   }
+  .h_90{
+    height: 90px;
+  }
   .h_100{
     height: 100px;
   }
@@ -23,6 +26,9 @@
   /* width */
   .w_24{
     width: 24%;
+  }
+  .w_28{
+    width: 28%;
   }
   .w_78{
     width: 78%;
